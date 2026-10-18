@@ -1,5 +1,5 @@
 :root{--ink:#252a30;--ink-soft:#505963;--muted:#747d86;--line:#e2e6e5;--paper:#fff;--wash:#f7f9f8;--teal-dark:#287566;--blue-dark:#287566}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI",Arial,sans-serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}a{color:var(--teal-dark);text-decoration:none}a:hover{text-decoration:underline}img{display:block;max-width:100%;height:auto}button{font:inherit}h1,h2,h3,p,figure{margin:0}p+p{margin-top:16px}h2,h3{line-height:1.3}a:focus-visible,button:focus-visible,video:focus-visible,[tabindex]:focus-visible{outline:3px solid #4e9e8d;outline-offset:5px}.page-shell,.wide-shell{width:min(1040px,calc(100% - 48px));margin-inline:auto}.text-shell{max-width:920px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}a{color:var(--teal-dark);text-decoration:none}a:hover{text-decoration:underline}img{display:block;max-width:100%;height:auto}button{font:inherit}h1,h2,h3,p,figure{margin:0}p+p{margin-top:16px}h2,h3{line-height:1.3}p{hyphens:auto}a:focus-visible,button:focus-visible,video:focus-visible,[tabindex]:focus-visible{outline:3px solid #4e9e8d;outline-offset:5px}.page-shell,.wide-shell{width:min(1040px,calc(100% - 48px));margin-inline:auto}.text-shell{max-width:920px}
 .skip-link{position:fixed;top:8px;left:8px;padding:10px 18px;background:var(--ink);color:#fff;z-index:200;transform:translateY(-150%)}.skip-link:focus{transform:translateY(0)}.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}.nav-shell{width:min(1040px,calc(100% - 48px));min-height:58px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px}.wordmark{display:flex;align-items:center;gap:9px;font-size:15px;font-weight:750;letter-spacing:.08em;color:var(--ink)}.wordmark-icon{width:20px;height:20px;background:url('../images/moss-mark.svg') center/contain no-repeat}.nav-links{display:flex;gap:24px}.nav-links a{font-size:13px;color:var(--ink-soft)}
 .hero-section{padding:72px 0 44px;text-align:center}.ambient{display:none}.eyebrow,.section-kicker{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--teal-dark);margin-bottom:16px}.hero-section h1{font-size:clamp(30px,3.7vw,47px);font-weight:750;line-height:1.2;letter-spacing:-.035em;max-width:1050px;margin:auto}.hero-section h1 span{color:var(--teal-dark)}.hero-deck{margin-top:20px;font-size:20px;color:var(--ink-soft);font-family:Georgia,serif}.author-line{margin:28px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:3px 17px;font-size:16px;font-weight:500;color:var(--teal-dark)}sup{font-size:.65em}.affiliation-line{display:flex;justify-content:center;flex-wrap:wrap;gap:3px 20px;margin-top:9px;font-size:14px;color:var(--ink-soft)}.contribution-line{font-size:12px;margin-top:5px;color:var(--muted)}.action-row{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:25px}.action-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #dce4e0;border-radius:6px;padding:8px 15px;background:#f7f9f8;font-size:13px;font-weight:600;color:var(--ink-soft)}.action-button small{font-size:10px;font-weight:400;color:var(--muted)}.action-button svg,.scroll-top svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.is-disabled{cursor:default}
 .teaser-section{padding:10px 0 44px}.figure-card{margin:0;background:#fff}.figure-card img{width:100%}.figure-card figcaption{padding:14px 4px 0;font-size:13px;line-height:1.65;color:var(--muted);text-align:center}.hero-figure{padding-bottom:12px}.section-block{padding:55px 0}.section-heading{margin-bottom:28px}.section-heading h2,.split-copy h2,.citation-card h2{font-family:Georgia,"Times New Roman",serif;font-weight:600;font-size:32px;letter-spacing:-.025em;line-height:1.25}.centered-heading{text-align:center}.narrow-heading{max-width:850px;margin-inline:auto}.section-heading>p:last-child{margin:14px auto 0;color:var(--ink-soft);max-width:800px}.section-heading>.section-kicker:first-child{margin-top:0}.abstract-section{background:var(--wash)}.abstract-copy{font-size:16px;line-height:1.9;text-align:justify;color:var(--ink-soft)}.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:32px;gap:24px;max-width:920px}.metric-card{padding:12px 22px;text-align:center;border-left:1px solid #d8e1dc}.metric-card:first-child{border:0}.metric-card strong{display:block;font-size:30px;font-weight:650;color:var(--teal-dark);line-height:1.3;letter-spacing:-.04em}.metric-card span{display:block;font-size:12px;line-height:1.6;color:var(--ink-soft);margin-top:8px}
@@ -10,3 +10,159 @@
 @media(max-width:760px){.hero-section{padding:48px 0 32px}.desktop-break{display:none}.hero-deck{font-size:18px}.nav-links{gap:14px}.nav-links a{font-size:12px}.split-layout{grid-template-columns:1fr;gap:30px}.step-grid{gap:18px}.step-card h3{font-size:17px}.metric-grid{gap:10px}.metric-card{padding:8px 12px}.metric-card strong{font-size:25px}.section-heading h2,.split-copy h2,.citation-card h2{font-size:29px}}
 @media(max-width:540px){.page-shell,.wide-shell,.nav-shell{width:calc(100% - 32px)}.nav-shell{min-height:52px}.nav-links{gap:13px}.nav-links a[href='#insight'],.nav-links a[href='#experiments']{display:none}.hero-section h1{font-size:30px}.eyebrow{font-size:9px;letter-spacing:.12em}.author-line{font-size:14px;gap:5px 12px}.affiliation-line{font-size:12px}.action-row{gap:6px}.action-button{padding:7px 10px;gap:5px;font-size:12px}.action-button svg{display:none}.action-button small{font-size:9px}.section-block{padding:38px 0}.abstract-copy{text-align:left;font-size:15px}.metric-grid{grid-template-columns:1fr;gap:0}.metric-card{border-left:0;border-top:1px solid var(--line);padding:16px}.metric-card span{margin-top:4px}.video-grid,.step-grid{grid-template-columns:1fr}.video-grid{gap:14px}.demo-task{margin-top:26px}.section-heading h2,.split-copy h2{font-size:27px}.method-callout{justify-content:flex-start}.figure-card figcaption{font-size:12px}.bibtex-card pre{padding:14px}.result-intro h3{font-size:19px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Abstract 正文 */
+.abstract-copy {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #111;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* 手机端 */
+@media (max-width: 540px) {
+  .abstract-copy {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+/* Keep the insight label consistent with other section labels. */
+.split-copy p.section-kicker {
+  color: var(--teal-dark);
+}
+
+/* Adjust this width to resize the insight figure. */
+#insight .compact-figure {
+  width: 100%;
+  max-width: 350px;
+}
+#insight .compact-figure picture {
+  display: block;
+  max-width: 250px;
+  margin-inline: auto;
+}
+@media (min-width: 761px) {
+  #insight .compact-figure figcaption {
+    white-space: nowrap;
+  }
+}
+
+
+/* Full-width heading and closing text, with a figure beside the first two paragraphs. */
+.insight-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 350px;
+  gap: 40px;
+  align-items: center;
+}
+.insight-closing {
+  margin-top: 24px;
+}
+@media (max-width: 760px) {
+  .insight-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+
+/* Align the two insight paragraphs on both sides. */
+#insight .insight-layout > .split-copy p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+/* Method: adjust the callout font size here. */
+#method {
+  --method-callout-font-size: 15px;
+  --method-column-gap: 32px;
+}
+#method .section-heading,
+#method .section-heading > p:last-child {
+  max-width: none;
+}
+#method .section-heading > p:last-child,
+#method .step-card p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+#method .step-grid,
+#method .method-callout {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--method-column-gap);
+}
+#method .method-callout {
+  display: grid;
+  padding: 15px 0;
+  font-size: var(--method-callout-font-size);
+  text-align: left;
+}
+#method .method-callout > span {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+}
+#method .method-callout > span::before {
+  flex-shrink: 0;
+}
+@media (max-width: 760px) {
+  #method { --method-column-gap: 18px; }
+}
+@media (max-width: 540px) {
+  #method .step-grid,
+  #method .method-callout {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Separate the results section from the simulation video above it. */
+#results {
+  border-top: 1px solid var(--line);
+}
+#results .result-block:first-of-type {
+  border-top: 0;
+}
+.result-table caption {
+  caption-side: bottom;
+  text-align: center;
+  padding: 14px 4px 0;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+
+/* BibTeX code panel. */
+#citation {
+  background: #fff;
+}
+.bibtex-card pre {
+  padding: 22px 24px;
+  border: 1px solid #dedfe2;
+  border-radius: 8px;
+  background: #f5f7f9;
+  color: #252525;
+  font-family: Consolas, "Liberation Mono", monospace;
+  font-size: 15px;
+  line-height: 1.65;
+  white-space: pre;
+  overflow-x: auto;
+  text-align: left;
+  tab-size: 2;
+}
+.bibtex-card pre code {
+  font: inherit;
+}
+@media (max-width: 540px) {
+  .bibtex-card pre {
+    padding: 16px;
+    font-size: 13px;
+  }
+}

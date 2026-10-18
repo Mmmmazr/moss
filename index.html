@@ -30,7 +30,7 @@
   <meta name="citation_publication_date" content="2027">
   <title>MOSS | Mode-Oriented Source Shaping</title>
   <link rel="icon" href="static/images/moss-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/index.css?v=20261018-method-alignment">
   <script defer src="static/js/index.js"></script>
   <script type="application/ld+json">
   {
@@ -71,7 +71,7 @@
         <p class="eyebrow">Robot Learning · Flow Matching · Multimodal Control</p>
         <h1><span>MOSS</span>: Mode-Oriented Source Shaping<br class="desktop-break"> for Robot Flow Matching Policies</h1>
 
-        <p class="hero-deck">Controllable robot behavior starts at the source.</p>
+        <p class="hero-deck">Controllable Robot Behaviors Start at the Source</p>
         <div class="author-line" aria-label="Paper authors">
           <span>Zirun Ma<sup>1,2,*</sup></span><span>Jindou Jia<sup>1,*</sup></span><span>Tuo An<sup>1</sup></span>
           <span>Jiaqi Bai<sup>1</sup></span><span>Jiahua Dong<sup>1</sup></span><span>Jianfei Yang<sup>1,†</sup></span>
@@ -82,10 +82,26 @@
         </div>
         <p class="contribution-line"><sup>*</sup> Equal contribution &nbsp;·&nbsp; <sup>†</sup> Corresponding author </p>
         <div class="action-row" aria-label="Project resources">
-          <span class="action-button is-disabled" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6V2zm8 1.5V7h3.5M9 11h6M9 15h6M9 19h4"/></svg>Paper <small>Coming soon</small></span>
-          <span class="action-button is-disabled" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18 10 6h4l6 12M7 13h10M10 18l2-4 2 4"/></svg>arXiv <small>Coming soon</small></span>
-          <span class="action-button is-disabled" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-4 3 4 3m8-6 4 3-4 3m-2-9-4 12"/></svg>Code <small>Coming soon</small></span>
-        </div>
+          <a class="action-button"
+            href="https://arxiv.org/abs/2610.22193"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 2h8l4 4v16H6V2zm8 1.5V7h3.5M9 11h6M9 15h6M9 19h4"/>
+            </svg>
+            Paper
+          </a>
+
+          <a class="action-button"
+            href="https://github.com/你的用户名/你的仓库名"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m8 9-4 3 4 3m8-6 4 3-4 3m-2-9-4 12"/>
+            </svg>
+            Code
+          </a>
+      </div>
       </div>
     </section>
 
@@ -93,7 +109,7 @@
       <div class="page-shell wide-shell">
         <figure class="figure-card hero-figure">
           <picture><source srcset="static/images/moss/teaser.webp" type="image/webp"><img src="static/images/moss/teaser.png" width="4470" height="1725" alt="MOSS overview showing a multimodal robot task, adaptive source separation, and the shared flow network" fetchpriority="high"></picture>
-          <figcaption><strong>One policy, multiple behaviors.</strong> MOSS adaptively shapes the source distribution so that choosing where generation starts determines the requested mode.</figcaption>
+          <figcaption><strong>One policy, Multiple behaviors.</strong> MOSS adaptively shapes the source distribution so that choosing where generation starts determines the requested mode.</figcaption>
         </figure>
       </div>
     </section>
@@ -113,96 +129,110 @@
         </p>
       </div>
       <div class="page-shell metric-grid" aria-label="Key results">
-        <article class="metric-card"><strong>up to 100%</strong><span>target-mode guidance with high task success</span></article>
-        <article class="metric-card"><strong>&gt;90% GR</strong><span>for minority modes under a 10:90 data imbalance</span></article>
-        <article class="metric-card"><strong>+43.3 pp</strong><span>average real-world GR over mode-conditioned FM</span></article>
-      </div>
-    </section>
-
-    <section class="section-block demos-section" id="videos">
-      <div class="page-shell">
-        <div class="section-heading"><p class="section-kicker">MOSS in action</p><h2>Video Demonstrations</h2><p>Different modes. One shared policy. Explore the real-world manipulation tasks and simulation setting.</p></div>
-        <p class="placeholder-note">Preview footage · All players currently use the same placeholder clip. Task-specific rollouts will replace these previews.</p>
-        <article class="demo-task"><h3>Place Cups</h3><div class="video-grid"><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Place Cups · Mode 1 — placeholder video"><source src="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4">Download the video</a>.</video><figcaption>Place Cups · Mode 1<span>Placeholder</span></figcaption></figure><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Place Cups · Mode 2 — placeholder video"><source src="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4">Download the video</a>.</video><figcaption>Place Cups · Mode 2<span>Placeholder</span></figcaption></figure></div></article>
-        <article class="demo-task"><h3>Pick Veg</h3><div class="video-grid"><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Pick Veg · Mode 1 — placeholder video"><source src="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4">Download the video</a>.</video><figcaption>Pick Veg · Mode 1<span>Placeholder</span></figcaption></figure><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Pick Veg · Mode 2 — placeholder video"><source src="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4">Download the video</a>.</video><figcaption>Pick Veg · Mode 2<span>Placeholder</span></figcaption></figure></div></article>
-        <article class="demo-task"><h3>Open Drawer</h3><div class="video-grid"><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Open Drawer · Mode 1 — placeholder video"><source src="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4">Download the video</a>.</video><figcaption>Open Drawer · Mode 1<span>Placeholder</span></figcaption></figure><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Open Drawer · Mode 2 — placeholder video"><source src="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4">Download the video</a>.</video><figcaption>Open Drawer · Mode 2<span>Placeholder</span></figcaption></figure></div></article>
-        <article class="demo-task"><h3>Simulation Overview</h3><div class="simulation-video"><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Simulation montage — placeholder video"><source src="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/cfa8bbc8c8f0cac1e4bdc539c09e47f4.mp4">Download the video</a>.</video><figcaption>Simulation montage<span>Placeholder</span></figcaption></figure></div></article>
+        <article class="metric-card"><strong>Up to 100%</strong><span>guidance rate with high task success</span></article>
+        <article class="metric-card"><strong>&gt;90%</strong><span>guidance rate under imbalanced dataset</span></article>
+        <article class="metric-card"><strong>+43.3% </strong><span>increase in guidance rate over baselines</span></article>
       </div>
     </section>
 
     <section class="section-block tinted-section" id="insight">
-      <div class="page-shell split-layout insight-layout">
-        <div class="split-copy">
-          <p class="section-kicker">Key insight</p><h2>Flow matching already organizes its noise by behavior.</h2>
-          <p>Under deterministic transport, each behavioral mode has a distinct preimage in the initial noise space. We call these regions <strong>noise zones</strong>.</p>
-          <p>In practice, finite data, limited model capacity, and few integration steps blur their boundaries. The plot shows that the initial noise is predictive of the resulting mode, but neighboring modes still overlap too much for reliable control.</p>
-          <div class="insight-note"><span class="note-dot"></span>MOSS makes this implicit organization explicit and semantically aligned.</div>
+      <div class="page-shell">
+        <div class="section-heading insight-heading">
+          <p class="section-kicker">Key insight</p>
+          <h2>Multimodal Property of Flow Matching</h2>
         </div>
-        <figure class="figure-card compact-figure">
+        <div class="insight-layout">
+          <div class="split-copy">
+            <p>Even with a standard <em>Gaussian</em> source, a flow-matching policy already organizes initial noise by behavioral mode. For a fixed observation, our theory shows that ideal deterministic transport partitions the source space into distinct <strong>noise zones</strong>, each leading to a particular mode. This structure emerges naturally from the transport itself, without explicit mode conditioning.</p>
+            <p>Under suitable regularity conditions, these zones also exhibit local stability: small changes to an initial noise sample preserve its resulting mode when the generated action lies sufficiently far from a semantic boundary. This suggests that behavior can, in principle, be selected by choosing where generation starts.</p>
+          </div>
+          <figure class="figure-card compact-figure">
           <picture><source srcset="static/images/moss/fm_noise_separation.webp" type="image/webp"><img src="static/images/moss/fm_noise_separation.png" width="1162" height="998" alt="Overlapping clusters of initial noise corresponding to four behavioral modes" loading="lazy"></picture>
-          <figcaption>Initial-noise mode separation in a standard flow-matching policy.</figcaption>
+          <figcaption><strong>Initial-noise mode separation in FM.</strong></figcaption>
         </figure>
+        </div>
+        <div class="split-copy insight-closing">
+          <p>In practice, limited demonstrations, mode imbalance, imperfect learning, and few integration steps weaken this separation. Samples near mode boundaries become sensitive to approximation errors, making the implicit zones difficult to use for reliable control.</p>
+          <!-- <div class="insight-note"><span class="note-dot"></span>
+            MOSS builds on this property by making source-space mode separation explicit and controllable.
+          </div> -->
+        </div>
       </div>
     </section>
 
     <section class="section-block" id="method">
       <div class="page-shell">
-        <div class="section-heading centered-heading narrow-heading"><p class="section-kicker">Method</p><h2>Control the mode through the source—not the network.</h2><p>MOSS preserves a single shared velocity field and changes only the initial distribution used for generation.</p></div>
-        <div class="step-grid">
-          <article class="step-card"><span class="step-number">01</span><h3>Estimate ambiguity</h3><p>A lightweight estimator predicts the local modality strength from observation and action history.</p></article>
-          <article class="step-card"><span class="step-number">02</span><h3>Shape the source</h3><p>Mode-specific Gaussian sources merge along shared motion and separate as future behaviors diverge.</p></article>
-          <article class="step-card"><span class="step-number">03</span><h3>Select at inference</h3><p>A user or planner chooses mode <em>k</em>; sampling its source component selects the requested behavior.</p></article>
+        <div class="section-heading centered-heading narrow-heading"><p class="section-kicker">Method</p><h2>Mode-Oriented Source Shaping</h2>
+          <p>MOSS assigns each behavioral mode its own <em>Gaussian</em> source and adapts their separation to the current state. A single shared flow network transforms samples from these sources into actions, making behavior selectable through the initial noise.</p>
         </div>
-        <div class="method-callout"><span>One shared flow network</span><span>No mode label injected into the velocity field</span><span>Natural extension to multiple modes</span></div>
+        <div class="step-grid">
+          <article class="step-card"><span class="step-number">01</span><h3>Estimate Modality Strength</h3><p>A lightweight estimator uses observation and action history to predict how strongly future behaviors diverge. It learns from demonstrations by comparing differences across modes with variation within each mode.</p></article>
+          <article class="step-card"><span class="step-number">02</span>
+            <h3>Adapt the Source Geometry</h3>
+            <p>Each mode receives a Gaussian source aligned with its characteristic action direction. These sources move closer together when behaviors are similar and farther apart, with less overlap, near behavioral branches.</p></article>
+          <article class="step-card"><span class="step-number">03</span>
+            <h3>Select at Inference</h3><p>At inference, a user or planner selects a mode and samples initial noise from its corresponding source. The shared flow network then generates actions without receiving the mode label as an input.</p></article>
+        </div>
+        <div class="method-callout"><span>One Shared Flow Network</span><span>State-Adaptive Source Separation</span><span>Direct Selection Across Multiple Modes</span></div>
       </div>
     </section>
 
     <section class="section-block tinted-section" id="experiments">
       <div class="page-shell">
-        <div class="section-heading centered-heading narrow-heading"><p class="section-kicker">Experiments</p><h2>Six simulated and three real-world tasks.</h2><p>Each task admits multiple distinct yet valid strategies for successful completion.</p></div>
+        <div class="section-heading centered-heading narrow-heading"><p class="section-kicker">Experiments</p><h2>Tasks</h2></div>
         <figure class="figure-card full-figure">
           <picture><source srcset="static/images/moss/experiments.webp" type="image/webp"><img src="static/images/moss/experiments.png" width="3710" height="1553" alt="Six simulation tasks and three real-world robot tasks used to evaluate MOSS" loading="lazy"></picture>
-          <figcaption>Simulation benchmarks and real-world tasks on a Galaxea R1 Lite robot.</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section class="section-block demos-section" id="videos">
+      <div class="page-shell">
+        <div class="section-heading"><h2>Video Demos</h2></div>
+        <article class="demo-task"><h3>Place Cups</h3><div class="video-grid"><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Place Cups · Mode 1"><source src="static/videos/place_cups_mode_1.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/place_cups_mode_1.mp4">Download the video</a>.</video><figcaption>Place Cups · Mode 1</figcaption></figure><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Place Cups · Mode 2"><source src="static/videos/place_cups_mode_2.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/place_cups_mode_2.mp4">Download the video</a>.</video><figcaption>Place Cups · Mode 2</figcaption></figure></div></article>
+        <article class="demo-task"><h3>Pick Veg</h3><div class="video-grid"><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Pick Veg · Mode 1"><source src="static/videos/pick_veg_mode_1.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/pick_veg_mode_1.mp4">Download the video</a>.</video><figcaption>Pick Veg · Mode 1</figcaption></figure><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Pick Veg · Mode 2"><source src="static/videos/pick_veg_mode_2.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/pick_veg_mode_2.mp4">Download the video</a>.</video><figcaption>Pick Veg · Mode 2</figcaption></figure></div></article>
+        <article class="demo-task"><h3>Open Drawer</h3><div class="video-grid"><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Open Drawer · Mode 1"><source src="static/videos/open_drawer_mode_1.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/open_drawer_mode_1.mp4">Download the video</a>.</video><figcaption>Open Drawer · Mode 1</figcaption></figure><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Open Drawer · Mode 2"><source src="static/videos/open_drawer_mode_2.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/open_drawer_mode_2.mp4">Download the video</a>.</video><figcaption>Open Drawer · Mode 2</figcaption></figure></div></article>
+        <article class="demo-task"><h3>Simulation Overview</h3><div class="simulation-video"><figure class="video-card"><video controls muted loop playsinline preload="metadata" aria-label="Simulation montage — placeholder video"><source src="static/videos/place_cups_mode_1.mp4" type="video/mp4">Your browser does not support embedded video. <a href="static/videos/place_cups_mode_1.mp4">Download the video</a>.</video><figcaption>Simulation montage<span>Placeholder</span></figcaption></figure></div></article>
       </div>
     </section>
 
     <section class="section-block" id="results">
       <div class="page-shell">
-        <div class="section-heading centered-heading narrow-heading"><p class="section-kicker">Main results</p><h2>Reliable control without sacrificing success.</h2><p>GR measures whether a rollout both succeeds and realizes the requested semantic mode; SR measures task success.</p></div>
+        <div class="section-heading centered-heading narrow-heading"><h2>Main Results</h2></div>
         <article class="result-block">
-          <div class="result-intro"><span class="result-index">01</span><div><h3>Controllable behavior in simulation</h3><p>MOSS maintains high guidance and success across four bimodal tasks, while source components remain explicitly aligned with semantic modes.</p></div></div>
-          <div class="table-wrap" tabindex="0" aria-label="Scrollable simulation results table">
-            <table class="result-table"><caption>Guidance rate / success rate (GR / SR)</caption><thead><tr><th rowspan="2">Method</th><th colspan="2">Push Cube</th><th colspan="2">Grasp Eyeglasses</th><th colspan="2">Stack Cube</th><th colspan="2">Put Wine</th></tr><tr><th>M1</th><th>M2</th><th>M1</th><th>M2</th><th>M1</th><th>M2</th><th>M1</th><th>M2</th></tr></thead>
-              <tbody><tr><th>Mode-Cond. FM</th><td>.86 / .96</td><td>.94 / 1.00</td><td>1.00 / 1.00</td><td>1.00 / 1.00</td><td>.96 / .96</td><td>.94 / .94</td><td>.92 / .92</td><td>.94 / .96</td></tr><tr><th>GMM-Sourced FM</th><td>.72 / .96</td><td>.92 / 1.00</td><td>.98 / 1.00</td><td>.42 / 1.00</td><td>.58 / 1.00</td><td>.56 / 1.00</td><td>.94 / .94</td><td>.80 / .94</td></tr><tr class="ours-row"><th>MOSS</th><td>.99 / .99</td><td>1.00 / 1.00</td><td>1.00 / 1.00</td><td>1.00 / 1.00</td><td>.98 / .98</td><td>.96 / .96</td><td>.92 / .94</td><td>.86 / .94</td></tr></tbody></table>
+          <div class="result-intro"><span class="result-index">01</span><div><h3>Simulation Results</h3><p>MOSS maintains high guidance and success across simulation tasks.</p></div></div>
+          <div class="table-wrap" tabindex="0" aria-label="Scrollable simulation results table"> 
+            <table class="result-table"><caption><strong>Evaluation results on 4 simulation tasks.</strong> For each requested mode, we report guidance rate and success rate (GR / SR).</caption><thead><tr><th rowspan="2">Method</th><th colspan="2">Push Cube</th><th colspan="2">Grasp Eyeglasses</th><th colspan="2">Stack Cube</th><th colspan="2">Put Wine</th></tr><tr><th>M1</th><th>M2</th><th>M1</th><th>M2</th><th>M1</th><th>M2</th><th>M1</th><th>M2</th></tr></thead>
+              <tbody><tr><th>Mode-Cond. FM</th><td>0.86 / 0.96</td><td>0.94 / 1.00</td><td>1.00 / 1.00</td><td>1.00 / 1.00</td><td>0.96 / 0.96</td><td>0.94 / 0.94</td><td>0.92 / 0.92</td><td>0.94 / 0.96</td></tr><tr><th>GMM-Sourced FM</th><td>0.72 / 0.96</td><td>0.92 / 1.00</td><td>0.98 / 1.00</td><td>0.42 / 1.00</td><td>0.58 / 1.00</td><td>0.56 / 1.00</td><td>0.94 / 0.94</td><td>0.80 / 0.94</td></tr><tr class="ours-row"><th>MOSS</th><td>0.99 / 0.99</td><td>1.00 / 1.00</td><td>1.00 / 1.00</td><td>1.00 / 1.00</td><td>0.98 / 0.98</td><td>0.96 / 0.96</td><td>0.92 / 0.94</td><td>0.86 / 0.94</td></tr></tbody></table>
           </div>
-          <figure class="figure-card full-figure result-figure"><picture><source srcset="static/images/moss/simulator_unguided.webp" type="image/webp"><img src="static/images/moss/simulator_unguided.png" width="3912" height="1325" alt="Behavior distributions of unconditional policies across four simulation tasks" loading="lazy"></picture><figcaption>Unconditional policies can represent multiple outcomes, but cannot select which one to execute.</figcaption></figure>
+          <figure class="figure-card full-figure result-figure"><picture><source srcset="static/images/moss/simulator_unguided.webp" type="image/webp"><img src="static/images/moss/simulator_unguided.png" width="3912" height="1325" alt="Behavior distributions of unconditional policies across four simulation tasks" loading="lazy"></picture><figcaption><strong>Behavior distributions of unconditional policies on simulation tasks.</strong></figcaption></figure>
         </article>
 
         <article class="result-block">
-          <div class="result-intro"><span class="result-index">02</span><div><h3>Balanced control on real robots</h3><p>Direct conditioning collapses on one requested mode in Pick Veg and Open Drawer; MOSS retains control of both modes under visual and execution variability.</p></div></div>
+          <div class="result-intro"><span class="result-index">02</span><div><h3>Real-World Results</h3><p>Direct conditioning collapses on one requested mode in Pick Veg and Open Drawer, while MOSS retains control of both modes under visual and execution variability.</p></div></div>
           <div class="table-wrap real-table-wrap" tabindex="0" aria-label="Scrollable real-world results table">
-            <table class="result-table"><caption>Average success rate and mode-specific guidance rates</caption><thead><tr><th>Task</th><th>Method</th><th>SR</th><th>GR₁</th><th>GR₂</th></tr></thead><tbody>
-              <tr><th rowspan="3">Place Cups</th><td>FM-DiT</td><td>.70</td><td>—</td><td>—</td></tr><tr><td>Mode-Cond. FM</td><td>.70</td><td>.15</td><td>.85</td></tr><tr class="ours-row"><td>MOSS</td><td>.98</td><td>.95</td><td>1.00</td></tr>
-              <tr><th rowspan="3">Pick Veg</th><td>FM-DiT</td><td>.60</td><td>—</td><td>—</td></tr><tr><td>Mode-Cond. FM</td><td>.65</td><td>.00</td><td>.60</td></tr><tr class="ours-row"><td>MOSS</td><td>.75</td><td>.80</td><td>.65</td></tr>
-              <tr><th rowspan="3">Open Drawer</th><td>FM-DiT</td><td>.75</td><td>—</td><td>—</td></tr><tr><td>Mode-Cond. FM</td><td>.85</td><td>.85</td><td>.00</td></tr><tr class="ours-row"><td>MOSS</td><td>.83</td><td>.90</td><td>.75</td></tr>
+            <table class="result-table"><caption> <strong>Real-world results.</strong> We report average success rate (SR) and mode-specific guidance rates (GR1 and GR2)</caption><thead><tr><th>Task</th><th>Method</th><th>SR</th><th>GR₁</th><th>GR₂</th></tr></thead><tbody>
+              <tr><th rowspan="3">Place Cups</th><td>FM-DiT</td><td>0.70</td><td>—</td><td>—</td></tr><tr><td>Mode-Cond. FM</td><td>0.70</td><td>0.15</td><td>0.85</td></tr><tr class="ours-row"><td>MOSS</td><td>0.98</td><td>0.95</td><td>1.00</td></tr>
+              <tr><th rowspan="3">Pick Veg</th><td>FM-DiT</td><td>0.60</td><td>—</td><td>—</td></tr><tr><td>Mode-Cond. FM</td><td>0.65</td><td>0.00</td><td>0.60</td></tr><tr class="ours-row"><td>MOSS</td><td>0.75</td><td>0.80</td><td>0.65</td></tr>
+              <tr><th rowspan="3">Open Drawer</th><td>FM-DiT</td><td>0.75</td><td>—</td><td>—</td></tr><tr><td>Mode-Cond. FM</td><td>0.85</td><td>0.85</td><td>0.00</td></tr><tr class="ours-row"><td>MOSS</td><td>0.83</td><td>0.90</td><td>0.75</td></tr>
             </tbody></table>
           </div>
         </article>
 
-        <article class="result-block"><div class="result-intro"><span class="result-index">03</span><div><h3>Minority-mode efficiency</h3><p>With only 10 minority-mode demonstrations against 90 majority-mode demonstrations, MOSS rapidly recovers the requested minority behavior by reusing shared motion structure.</p></div></div><figure class="figure-card full-figure result-figure"><picture><source srcset="static/images/moss/imbalanced_efficiency.webp" type="image/webp"><img src="static/images/moss/imbalanced_efficiency.png" width="3758" height="1023" alt="Minority-mode learning curves under imbalanced training datasets" loading="lazy"></picture><figcaption>Minority-mode guidance rate versus exposure to minority-mode training samples.</figcaption></figure></article>
+        <article class="result-block"><div class="result-intro"><span class="result-index">03</span><div><h3>Robustness and Training Efficiency</h3><p>With 10:90 imbalanced demonstrations, MOSS rapidly recovers the requested minority behavior by reusing shared motion structure in robotic data.</p></div></div><figure class="figure-card full-figure result-figure"><picture><source srcset="static/images/moss/imbalanced_efficiency.webp" type="image/webp"><img src="static/images/moss/imbalanced_efficiency.png" width="3758" height="1023" alt="Minority-mode learning curves under imbalanced training datasets" loading="lazy"></picture><figcaption><strong>Minority-mode learning efficiency under imbalanced datasets.</strong></figcaption></figure></article>
 
-        <article class="result-block"><div class="result-intro"><span class="result-index">04</span><div><h3>Why adaptation matters</h3><p>Full-chunk, adaptive source shaping reaches consistently high guidance rates and remains more stable than fixed separation at later checkpoints.</p></div></div><figure class="figure-card full-figure result-figure"><picture><source srcset="static/images/moss/ablation_efficiency.webp" type="image/webp"><img src="static/images/moss/ablation_efficiency.png" width="4021" height="1315" alt="Guidance-rate curves comparing adaptive MOSS with fixed source shaping" loading="lazy"></picture><figcaption>Checkpoint-wise guidance rates for adaptive MOSS and fixed full-chunk source shaping.</figcaption></figure></article>
+        <article class="result-block"><div class="result-intro"><span class="result-index">04</span><div><h3>Ablation Studies</h3><p>Adaptive source shaping reaches consistently high guidance rates and remains more stable than fixed separation.</p></div></div><figure class="figure-card full-figure result-figure"><picture><source srcset="static/images/moss/ablation_efficiency.webp" type="image/webp"><img src="static/images/moss/ablation_efficiency.png" width="4021" height="1315" alt="Guidance-rate curves comparing adaptive MOSS with fixed source shaping" loading="lazy"></picture><figcaption><strong>Checkpoint-wise guidance rate of fixed source shaping and adaptive MOSS</strong></figcaption></figure></article>
       </div>
     </section>
 
     <section class="section-block citation-section" id="citation">
       <div class="page-shell citation-card bibtex-card">
         <div class="bibtex-heading"><div><p class="section-kicker">Citation</p><h2>BibTeX</h2></div><button class="copy-button" type="button" data-copy-target="bibtex-code">Copy</button></div>
-        <pre id="bibtex-code"><code>@misc{ma2027moss,
-  title  = {MOSS: Mode-Oriented Source Shaping for Robot Flow Matching Policies},
-  author = {Ma, Zirun and Jia, Jindou and An, Tuo and Bai, Jiaqi and Dong, Jiahua and Yang, Jianfei},
-  year   = {2027}
+        <pre id="bibtex-code" tabindex="0" aria-label="BibTeX citation"><code>@misc{ma2026mossmodeorientedsourceshaping,
+  title={MOSS: Mode-Oriented Source Shaping for Robot Flow Matching Policies},
+  author={Zirun Ma and Jindou Jia and Tuo An and Jiaqi Bai and Jiahua Dong and Jianfei Yang},
+  year={2026},
+  archivePrefix={arXiv}
 }</code></pre>
       </div>
     </section>
